@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1"/>
+<meta charset="UTF-8"/>
+<title>Cadastro Pais</title>
+<style>
+	.formulario
+	{
+		padding: 64px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 50px;
+		text-align: center;
+	}
+	.field
+	{
+		height: 30px;
+		width: 300px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.field:focus
+	{
+		width: 280px;
+	}
+	.botao
+	{
+		height: 30px;
+		width: 150px;
+	}
+	.fieldset
+	{
+		width: 50%; 
+		margin: 0px auto;
+	}
+	@media only screen and (max-width: 600px) 
+	{
+		.fieldset
+		{
+			width: 150px; 
+			margin: 0px auto;
+		}
+	}
+</style>
+</head>
+<body>
+	<div class="formulario">
+		<form action="ManterPais.do" method="get">
+		<fieldset class="fieldset"><legend>Cadastro de País</legend>
+				<input class="field" type="text" name="nome" placeholder="Nome"/><br>
+				<input class="field" type="text" name="populacao" placeholder="População"/><br>
+				<input class="field" type="text" name="area" placeholder="Área"/><br>
+				<input class="botao" type="submit" value="Cadastrar"/>
+		</fieldset>
+		</form>
+	</div> 
+</body>
+</html>
