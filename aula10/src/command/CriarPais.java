@@ -42,7 +42,6 @@ public class CriarPais implements Command
 		PaisService service = new PaisService();
 		RequestDispatcher view = null;
 		HttpSession session = request.getSession();
-
 		service.inserir(pais);
 		ArrayList<Pais> paises = new ArrayList<>();
 		paises.add(pais);
